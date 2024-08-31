@@ -1,0 +1,205 @@
+{
+  "all": "62dd4e7d9a4d4f60a46256c0ee968d84.css",
+  "weight": {
+    "400": "92a11c219fcc470982abae1192d97500.css",
+    "500": "8d1371ad399d4498a1f44f69dcc709b3.css",
+    "600": "5d8e96ace63248caacf64445e8c1caaa.css",
+    "700": "c5a6499090cb4b56978d39dcb3b418d8.css",
+    "800": "5bcc5962d39a4949bee2070b95cfe0cc.css",
+    "900": "0837a26583ea44e6a68de4c8bfdf5e5f.css"
+  },
+  "files": [
+    {
+      "weight": "400",
+      "filename": "5aa7d37773144592a5a7e2064c0c7854.woff2"
+    },
+    {
+      "weight": "400",
+      "filename": "a30289307a1d4b6388a3664c6dbaae63.woff2"
+    },
+    {
+      "weight": "400",
+      "filename": "68c622ada10f4f9ea6e0c9e918dae96e.woff2"
+    },
+    {
+      "weight": "400",
+      "filename": "651c0de91b6042e4b8b259e0e0bbb35a.woff2"
+    },
+    {
+      "weight": "500",
+      "filename": "251df5edbdcf419fbb5b303439c57c49.woff2"
+    },
+    {
+      "weight": "500",
+      "filename": "b0e867f0384c443e938677eed01dbfb1.woff2"
+    },
+    {
+      "weight": "500",
+      "filename": "812e5ebc5999488a8b144570f0d754f1.woff2"
+    },
+    {
+      "weight": "500",
+      "filename": "e61ad017a2f9404b87411a3824c3ccd8.woff2"
+    },
+    {
+      "weight": "600",
+      "filename": "3895a56013d745f388d471fb16b0e4d8.woff2"
+    },
+    {
+      "weight": "600",
+      "filename": "7e2164e514674f6187232da943927eff.woff2"
+    },
+    {
+      "weight": "600",
+      "filename": "16400b66055047648e7efada4b373def.woff2"
+    },
+    {
+      "weight": "600",
+      "filename": "09585dae01d24fe3b8471786c2e597fc.woff2"
+    },
+    {
+      "weight": "700",
+      "filename": "ca5629ae626c4d858a5bd7801462805f.woff2"
+    },
+    {
+      "weight": "700",
+      "filename": "9bdff56886644b35aadf955c4aae487a.woff2"
+    },
+    {
+      "weight": "700",
+      "filename": "e374a630f9624241875ed3c6529fddc6.woff2"
+    },
+    {
+      "weight": "700",
+      "filename": "a323a9b343ed464b922a9b0cb466bd88.woff2"
+    },
+    {
+      "weight": "800",
+      "filename": "8825c62f207546828045072a2dd60d04.woff2"
+    },
+    {
+      "weight": "800",
+      "filename": "7047db6913ce43c4a7b60f5557604980.woff2"
+    },
+    {
+      "weight": "800",
+      "filename": "48852c45cd244782b1332ab0a6407991.woff2"
+    },
+    {
+      "weight": "800",
+      "filename": "4b7d262d28ba4a43b626e9ec0666ff01.woff2"
+    },
+    {
+      "weight": "900",
+      "filename": "fbf09f896c80462aa7db889878236612.woff2"
+    },
+    {
+      "weight": "900",
+      "filename": "1c5ae3ab5e464941b2ec0e3d80810f49.woff2"
+    },
+    {
+      "weight": "900",
+      "filename": "344f921cef074008a5664236b0765604.woff2"
+    },
+    {
+      "weight": "900",
+      "filename": "22b1a45075674d7aaaaffbbb2b04e10e.woff2"
+    },
+    {
+      "weight": "400",
+      "filename": "3cdac982a0124281be99eff5e95a8860.woff2"
+    },
+    {
+      "weight": "400",
+      "filename": "9be0745e662541999e256aa29a41e0b5.woff2"
+    },
+    {
+      "weight": "400",
+      "filename": "2ff57298d05640c68364143ac11ed482.woff2"
+    },
+    {
+      "weight": "400",
+      "filename": "0ac93a38506e448da484e580c3d9c5ac.woff2"
+    },
+    {
+      "weight": "500",
+      "filename": "874ffe8536f64613a8e14f4e82b0943f.woff2"
+    },
+    {
+      "weight": "500",
+      "filename": "953f0d7a03f44803affca695abbda1b1.woff2"
+    },
+    {
+      "weight": "500",
+      "filename": "620b2daec84a499fa378dfc46265fe7d.woff2"
+    },
+    {
+      "weight": "500",
+      "filename": "aad4b9f8899a44569d5056cd7b9ae3ba.woff2"
+    },
+    {
+      "weight": "600",
+      "filename": "e1e8b0ef1d354ef3ae17eb9b2a9960bc.woff2"
+    },
+    {
+      "weight": "600",
+      "filename": "d920bb4f634c437d911e66d4ff4efa3d.woff2"
+    },
+    {
+      "weight": "600",
+      "filename": "f2156853db5f45aeb836cf8a27ffc04e.woff2"
+    },
+    {
+      "weight": "600",
+      "filename": "a4cac8ef57e641989edfd35ab629840b.woff2"
+    },
+    {
+      "weight": "700",
+      "filename": "ff7a7bbb12324a739d30f351872600b5.woff2"
+    },
+    {
+      "weight": "700",
+      "filename": "69075793a4d84f63895a11db8d76821a.woff2"
+    },
+    {
+      "weight": "700",
+      "filename": "1887ec1ec70a468091cb624ba1958448.woff2"
+    },
+    {
+      "weight": "700",
+      "filename": "9757cf946d254341b6d2e4d0d5e8f38f.woff2"
+    },
+    {
+      "weight": "800",
+      "filename": "4c16cce7fc97411fad18dd529504b235.woff2"
+    },
+    {
+      "weight": "800",
+      "filename": "51774cffc0a446e4ad66ba2c193ddc9a.woff2"
+    },
+    {
+      "weight": "800",
+      "filename": "01b3557ff27b4c8ca7f49ad2ffa7cd72.woff2"
+    },
+    {
+      "weight": "800",
+      "filename": "1f32ca47fba5442ea8dee823f54258a3.woff2"
+    },
+    {
+      "weight": "900",
+      "filename": "9eb578b5b3ca4c79996cd8f7ebfd7870.woff2"
+    },
+    {
+      "weight": "900",
+      "filename": "2c9c7604882d413cb0e4b336636ed63c.woff2"
+    },
+    {
+      "weight": "900",
+      "filename": "6cef07c6d6d5401d9d8ffca8f2f5b06f.woff2"
+    },
+    {
+      "weight": "900",
+      "filename": "d0af6b7eb48b42e49d93083de2d6db2c.woff2"
+    }
+  ]
+}
