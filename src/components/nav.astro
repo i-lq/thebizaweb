@@ -1,0 +1,56 @@
+---
+import logo from '../../public/logo.png';
+---
+
+<nav>
+    <div class="gm wdz">
+        <img src={logo.src} alt="Logo">
+    </div>
+    <div class="gm bvg">
+        <div class="yQff"></div>
+    </div>
+</nav>
+
+<style>
+    nav {
+        width: 100vw;
+        height: var(--wh);
+        --wh: 4em;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: flex-start;
+        align-items: flex-start;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .gm {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        width: 100%;
+        height: var(--wh);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .gm.wdz>img {
+        margin: 0;
+        padding: 0;
+        height: calc(100% - 1em);
+    }
+    
+    .gm.bvg {
+        z-index: 1;
+        background: rgb(var(--zt));
+    }
+    
+    .gm.wdz {
+        margin: 0 0 0 1em;
+    }
+</style>
