@@ -11,8 +11,8 @@ import Home from './index.astro';
     document.addEventListener('astro:page-load', () => {
         var hHL = document.getElementsByClassName(`hHL`)[0];
         if (hHL) {
-            if (window.location.pathname==`/quien-soy`) {
-                hHL.scroll(0, (window.innerHeight+100));
+            if (window.location.pathname==`/thebizaweb/quien-soy`) {
+                hHL.scroll(0, (window.innerHeight-(3*16)));
             };
         };
     });

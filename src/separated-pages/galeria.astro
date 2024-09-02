@@ -1,0 +1,88 @@
+---
+import GalleryCard from '../components/gallery-card.astro';
+
+
+import Image713a997b from "../../public/70936ecd-1386.jpg";
+import Imaged0819d7a from "../../public/d0819d7a-c351.jpg";
+import Imageba4c5589 from "../../public/ba4c5589-2988.jpg";
+import Image14834f79 from "../../public/14834f79-5f0c.jpg";
+import Image1895addc from "../../public/1895addc-5a9b.jpg";
+import Image70414c8a from "../../public/70414c8a-8773.jpg";
+import Imagebdbc7416 from "../../public/bdbc7416-e0af.jpg";
+import Imagede44b5c1 from "../../public/de44b5c1-843a.jpg";
+import Image3a439cdc from "../../public/3a439cdc-4477.jpg";
+
+---
+
+<section>
+    <div class="lb8">
+        <div class="wjYq">
+            <h2><a href="/thebizaweb/galeria">Galeria</a></h2>
+        </div>
+        <div class="qPnL">
+            <GalleryCard Image={Image713a997b} />
+            <GalleryCard Image={Imaged0819d7a} />
+            <GalleryCard Image={Imageba4c5589} />
+            <GalleryCard Image={Image14834f79} />
+            <GalleryCard Image={Image1895addc} />
+            <GalleryCard Image={Image70414c8a} />
+            <GalleryCard Image={Imagebdbc7416} />
+            <GalleryCard Image={Imagede44b5c1} />
+            <GalleryCard Image={Image3a439cdc} />
+        </div>
+    </div>
+</section>
+
+<style>
+    .lb8 {
+        width: 100vw;
+        height: fit-content;
+        margin: 0 0 0 0em;
+        padding: 4em 0px 2em 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background: linear-gradient(45deg,rgb(var(--cb) / 70%),rgb(var(--cb) / 50%));
+        backdrop-filter: blur(3px);
+    }
+</style>
+
+<style>
+    .wjYq {
+        padding: 0;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    .wjYq>h2 {
+        margin: 0 0 1em;
+        font-family: "Rubik";
+        letter-spacing: .15px;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .wjYq>h2>a {
+        color: unset;
+        text-decoration: none;
+    }
+</style>
+
+<style>
+    .qPnL {
+        width: 100vw;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+</style>

@@ -2,6 +2,7 @@
 import Nav from "../components/nav.astro";
 import { ViewTransitions } from "astro:transitions";
 import FooterLink from "../components/footer-link.astro";
+import i713a997b from "../../public/713a997b-06cb.jpg";
 
 interface Props {
 	title?: string;
@@ -24,9 +25,10 @@ if (title==``) {
 		<meta charset="UTF-8" />
 		<meta name="description" content="Página personal de Nicolás Cardozo, incluye galería de fotos y vídeos, y mapas conceptuales." />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/thebizaweb/favicon.ico" type="image/x-icon">
 		<meta property="og:description" content="Página personal de Nicolás Cardozo. Explora mis proyectos, conoce más sobre mí y sigue mis redes sociales.">
 		<meta property="og:title" content="Biza">
+		<meta property="og:image" content={i713a997b.src}>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<ViewTransitions></ViewTransitions>

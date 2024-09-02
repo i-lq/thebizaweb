@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/button.astro';
 import a0bf from '../../public/637ee0cc-be5b.png';
+import Galeria from '../separated-pages/galeria.astro';
 ---
 
 <Layout>
@@ -18,7 +19,7 @@ import a0bf from '../../public/637ee0cc-be5b.png';
 							adf99621.addEventListener('click', () => {
 								var hHL = document.getElementsByClassName(`hHL`)[0];
 								if (hHL) {
-									hHL.scroll(0, (window.innerHeight+100));
+									hHL.scroll(0, (window.innerHeight-(3*16)));
 								};
 							});
 						};
@@ -65,12 +66,13 @@ import a0bf from '../../public/637ee0cc-be5b.png';
 	<section class="zzn">
 		<div class="p6Dw">
 			<div class="dii">
-				<h2>¿Quién soy?</h2>
+				<h2><a href="/thebizaweb/quien-soy">¿Quién soy?</a></h2>
 				<h3>Nicolás Cardozo</h3>
 				<p>Hola, me llamo Nicolás Cardozo, tengo 26 años, soy estudiante de Comunicación Visual. En mi tiempo libre, me dedico a editar vídeos y disfruto de los juegos competitivos, como VALORANT, Fortnite y Pokémon Unite. A través de estos juegos, he encontrado una forma de enfrentar la depresión y la ansiedad, transformando esas experiencias en motivación y superación.</p>
 			</div>
 		</div>
 	</section>
+	<Galeria></Galeria>
 </Layout>
 
 <style>
@@ -187,7 +189,7 @@ import a0bf from '../../public/637ee0cc-be5b.png';
 
 	.jfr.mvI {
 		z-index: 0;
-		background: url(/1c807f86.jpg?) center/cover;
+		background: url(/thebizaweb/1c807f86.jpg?) center/cover;
 	}
 
 	.jfr>.fU3 {
@@ -236,7 +238,7 @@ import a0bf from '../../public/637ee0cc-be5b.png';
 
 <style>
 	.zzn {
-		background: url("/e4b48a94-35e0-45c8.jpg") center/cover;
+		background: url("/thebizaweb/e4b48a94-35e0-45c8.jpg") center/cover;
 	}
 
     .p6Dw {
@@ -267,6 +269,11 @@ import a0bf from '../../public/637ee0cc-be5b.png';
         letter-spacing: .15px;
         font-weight: bold;
         font-size: 1em;
+    }
+
+	.p6Dw>.dii>h2>a {
+		color: unset;
+		text-decoration: none;
     }
     
     .p6Dw>.dii>h3 {
