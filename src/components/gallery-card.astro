@@ -11,18 +11,27 @@ const { default: Image } = await import(`../../public/${src}`);
 
 
 <biz-img-card style={`--zk:${Image.height};--zw:${Image.width}`}>
-    <div class="dgO ra">
-        <div class="wwIw">
+    <div class="xlST">
+        <div class="dgO ra">
+            <div class="wwIw">
+                <img src={Image.src}>
+            </div>
+        </div>
+        <div class="dgO re">
             <img src={Image.src}>
         </div>
-    </div>
-    <div class="dgO re">
-        <img src={Image.src}>
     </div>
 </biz-img-card>
 
 <style>
     biz-img-card {
+        display: block;
+        height: fit-content;
+        width: fit-content;
+        /* margin: 3px 5px; */
+    }
+
+    .xlST {
         height: max-content;
         width: max-content;
         max-height: 20em;
@@ -32,15 +41,14 @@ const { default: Image } = await import(`../../public/${src}`);
         grid-template-rows: 1fr;
         aspect-ratio: var(--zw) / var(--zk);
         padding: 5px;
-        margin: 3px 5px;
         justify-content: center;
         align-items: center;
         transition: transform .25s;
     }
     
     .dgO {
-        width: 270.4px;
-        height: 319.96px;
+        width: var(--zw);
+        height: var(--zk);
         grid-column: 1 / -1;
         grid-row: 1 / -1;
         z-index: 3;
@@ -52,6 +60,7 @@ const { default: Image } = await import(`../../public/${src}`);
         height: 100%;
         margin: 0;
         padding: 0;
+        display: flex;
     }
     
     .dgO.ra>.wwIw>img {
