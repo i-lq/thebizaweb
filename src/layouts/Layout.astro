@@ -1,6 +1,5 @@
 ---
 import Nav from "../components/nav.astro";
-import fonts from "../../fonts/api.js";
 import { ViewTransitions } from "astro:transitions";
 import FooterLink from "../components/footer-link.astro";
 
@@ -23,13 +22,15 @@ if (title==``) {
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Página personal de Nicolás Cardozo, incluye galería de fotos y vídeos, y mapas conceptuales." />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<meta property="og:description" content="Página personal de Nicolás Cardozo. Explora mis proyectos, conoce más sobre mí y sigue mis redes sociales.">
+		<meta property="og:title" content="Biza">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<ViewTransitions></ViewTransitions>
-		<link rel="stylesheet" href={`/fonts/${fonts.Define([{ name: `Playfair Display` }, { name: 'Rubik' }, { name: 'Teko' }])}.css`}></link>
+		<link rel="stylesheet" href={`/fonts/9ed1a6fc73de43d896b9c35efa53dc23.css`}></link>
 	</head>
 	<body>
 		<Nav transparent={Astro.props["nav-transparent"]}></Nav>

@@ -60,7 +60,7 @@ export default (()=>{
     
                 var font = (element, end) => {
                     var value = Object.assign({
-                        name: `Montserrat`,
+                        name: `Rubik`,
                         weights: [100, 200, 300, 400, 500, 600, 700, 800, 900]
                     }, element);
     
