@@ -3,19 +3,21 @@ interface Props {
     src: string
 }
 
-const {src} = Astro.props;
+const { src } = Astro.props;
+
+const { default: Image } = await import(`../../public/${src}`);
 
 ---
 
 
-<biz-img-card>
+<biz-img-card style={`--zk:${Image.height};--zw:${Image.width}`}>
     <div class="dgO ra">
         <div class="wwIw">
-            <img src={src}>
+            <img src={Image.src}>
         </div>
     </div>
     <div class="dgO re">
-        <img src={src}>
+        <img src={Image.src}>
     </div>
 </biz-img-card>
 
@@ -30,8 +32,10 @@ const {src} = Astro.props;
         grid-template-rows: 1fr;
         aspect-ratio: 720 / 852;
         padding: 5px;
+        margin: 3px 5px;
         justify-content: center;
         align-items: center;
+        transition: transform .25s;
     }
     
     .dgO {
@@ -62,7 +66,8 @@ const {src} = Astro.props;
         margin: 0;
         padding: 0;
         object-fit: cover;
-        filter: blur(5em);
+        filter: blur(3em) opacity(.15);
+        transition: filter .25s;
     }
     
     .dgO.re {
@@ -73,5 +78,22 @@ const {src} = Astro.props;
         overflow: hidden;
         border-radius: 7px;
         background: rgb(var(--zt));
+    }
+</style>
+
+<!-- Hover styles! -->
+<style>
+    biz-img-card:hover {
+        transform: scale(1.02);
+        z-index: 5;
+    }
+
+    biz-img-card:hover .dgO.re>img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        filter: blur(5em) opacity(.75);
     }
 </style>

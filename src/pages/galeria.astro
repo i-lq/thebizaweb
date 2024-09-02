@@ -6,6 +6,42 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title='Galeria'>
 	<section>
-		<GalleryCard src='https://biza.neocities.org/1.jpg' />
+        <div class="wjYq">
+            <h2>Galeria</h2>
+        </div>
+        <div class="qPnL">
+            <GalleryCard src='70936ecd-1386.jpg' />
+        </div>
 	</section>
 </Layout>
+
+<style>
+    .wjYq {
+        padding: 0 0 0 1em;
+        width: 100vw;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    .wjYq>h2 {
+        margin: 0;
+        font-weight: bold;
+    }
+</style>
+
+<style>
+    .qPnL {
+        width: 100vw;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+</style>
