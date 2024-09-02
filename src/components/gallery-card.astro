@@ -18,3 +18,60 @@ const {src} = Astro.props;
         <img src={src}>
     </div>
 </biz-img-card>
+
+<style>
+    biz-img-card {
+        height: max-content;
+        width: max-content;
+        max-height: 20em;
+        max-width: 20em;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        aspect-ratio: 720 / 852;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dgO {
+        width: 270.4px;
+        height: 319.96px;
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        z-index: 3;
+        padding: 5px;
+    }
+    
+    .dgO.ra>.wwIw {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .dgO.ra>.wwIw>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .dgO.re>img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        filter: blur(5em);
+    }
+    
+    .dgO.re {
+        z-index: 0;
+    }
+    
+    .dgO.ra {
+        overflow: hidden;
+        border-radius: 7px;
+        background: rgb(var(--zt));
+    }
+</style>
