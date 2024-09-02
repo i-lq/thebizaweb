@@ -1,0 +1,1 @@
+import"./hoisted.Dq5B1Set.js";import"./hoisted.Cxkz0MMa.js";document.addEventListener("astro:page-load",()=>{var e=document.getElementsByClassName("hHL")[0];e&&window.location.pathname=="/quien-soy"&&e.scroll(0,window.innerHeight+100)});
