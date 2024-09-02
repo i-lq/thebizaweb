@@ -1,0 +1,19 @@
+---
+import Home from './index.astro';
+---
+
+
+<Home>
+    
+</Home>
+
+<script>
+    document.addEventListener('astro:page-load', () => {
+        var hHL = document.getElementsByClassName(`hHL`)[0];
+        if (hHL) {
+            if (window.location.pathname==`/quien-soy`) {
+                hHL.scroll(0, (window.innerHeight+100));
+            };
+        };
+    });
+</script>

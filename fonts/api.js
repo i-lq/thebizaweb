@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from 'url';
 import crypto from "crypto";
-import skyProcess from '../Libs/SkyThread.js';
+import thread from '../libs/thread.js';
 let __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 
@@ -91,7 +91,7 @@ export default (()=>{
                         var data = JSON.parse(data);
                         var ob = Object.keys(data.weight);
     
-                        skyProcess(3, ob, (ind3, nex3) => {
+                        thread(3, ob, (ind3, nex3) => {
                             const element = ob[ind3];
                             const file = data.weight[element];
                             if (!value.weights.includes((element / 1))) {
@@ -148,7 +148,7 @@ export default (()=>{
                 var ending = false;
                 var outfilecss = ``;
                 if (Array.isArray(fonts)) {
-                    skyProcess(1, fonts, (index, next) => {
+                    thread(1, fonts, (index, next) => {
                         const element = fonts[index];
                         font(element, () => {
                             next();

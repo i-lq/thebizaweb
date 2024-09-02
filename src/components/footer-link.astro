@@ -1,0 +1,79 @@
+---
+interface Props {
+    color?: string;
+    href: string;
+}
+
+const {color, href} = Astro.props;
+
+
+---
+
+
+<biz-ft-btn>
+    <a target="_blank" href={href}>
+        <div class="wv dt">
+            <slot></slot>
+        </div>
+        {
+          (typeof color === `string`) && (
+            <div class="wv az" style={`--c:${color}`} />
+            )
+        }
+    </a>
+</biz-ft-btn>
+
+<style>
+    biz-ft-btn {
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 50%;
+        background: rgb(var(--cb));
+        overflow: hidden;
+        margin: 0 .5em;
+    }
+
+    biz-ft-btn a {
+        text-decoration: none;
+        color: unset;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .wv {
+        width: 100%;
+        height: 100%;
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .wv.az {
+        background: radial-gradient(rgb(var(--c) / 60%) -150%, transparent 175%);
+        z-index: 0;
+    }
+</style>
+
+<!-- <script>
+    class bizFotterButton extends HTMLElement {
+        constructor() {
+            super();
+            
+            var href = `${this.dataset.h}`;
+            delete this.dataset.h;
+
+            this.addEventListener('click', () => {
+                window.open(href);
+            });
+        }
+    }
+
+    customElements.define("biz-ft-btn", bizFotterButton);
+</script> -->

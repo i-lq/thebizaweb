@@ -1,7 +1,283 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Button from '../components/button.astro';
+import a0bf from '../../public/637ee0cc-be5b.png';
 ---
 
 <Layout>
-
+	<section>
+		<div class="aLr">
+			<div class="hdm un">
+				<h2>BIENVENIDO</h2>
+				<p>Hola, me llamo <b>Nicolás Cardozo</b>, tengo 26 años y soy estudiante de <b>Comunicación Visual</b>.</p>
+				<Button id="adf99621-5166-52b3-94c6-f75e5c79b1fd">Lee más sobre mí</Button>
+				<script>
+					document.addEventListener('astro:page-load', () => {
+						var adf99621 = document.getElementById(`adf99621-5166-52b3-94c6-f75e5c79b1fd`);
+						if (adf99621) {
+							adf99621.addEventListener('click', () => {
+								var hHL = document.getElementsByClassName(`hHL`)[0];
+								if (hHL) {
+									hHL.scroll(0, (window.innerHeight+100));
+								};
+							});
+						};
+					});
+				</script>
+				<style is:global>
+					.aLr>.hdm.un>biz-button {
+						margin-top: 1em;
+						font-size: 1.35em;
+					}
+				</style>
+			</div>
+			<div class="hdm yq">
+				<div class="jfr mvE">
+					<div class="fJLV">
+						<img id="82ade5c7-114c-5dbb-ac8b-612686d6001e" style={`--g4:${a0bf.height};--tj:${a0bf.width};`} src={a0bf.src}>
+						<script>
+							(()=>{
+								var ac8b = document.getElementById(`82ade5c7-114c-5dbb-ac8b-612686d6001e`);
+								ac8b?.addEventListener('load', () => {
+									ac8b.style.opacity=1;
+								});
+								document.addEventListener('astro:page-load', () => {
+									var ac8b = document.getElementById(`82ade5c7-114c-5dbb-ac8b-612686d6001e`);
+									if (ac8b) {
+										var _d = setInterval(() => {
+											if (ac8b?.clientHeight>0) {
+												ac8b.style.opacity=1;
+												clearInterval(_d);
+											};
+										}, 64);
+									};
+								});
+							})();
+						</script>
+					</div>
+				</div>
+				<div class="jfr mvI">
+					<div class="fU3" />
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="zzn">
+		<div class="p6Dw">
+			<div class="dii">
+				<h2>¿Quién soy?</h2>
+				<h3>Nicolás Cardozo</h3>
+				<p>Hola, me llamo Nicolás Cardozo, tengo 26 años, soy estudiante de Comunicación Visual. En mi tiempo libre, me dedico a editar vídeos y disfruto de los juegos competitivos, como VALORANT, Fortnite y Pokémon Unite. A través de estos juegos, he encontrado una forma de enfrentar la depresión y la ansiedad, transformando esas experiencias en motivación y superación.</p>
+			</div>
+		</div>
+	</section>
 </Layout>
+
+<style>
+	@media screen and (max-width: 560px) {
+		.fJLV>img {
+			width: auto;
+			height: 90vh;
+			max-height: unset;
+			object-fit: contain;
+			transform: translate(25vw, 5em);
+		}
+	}
+	
+	@media screen and (max-width: 765px) {
+		.hdm.un>h2 {
+			font-size: 6em;
+		}
+	
+		.hdm.un>p {
+			margin: -2em 0 0 0;
+			width: 27em;
+			text-align: center;
+		}
+	}
+
+	@media screen and (max-width: 430px) {
+		.hdm.un>h2 {
+			font-size: 4em;
+		}
+	
+		.hdm.un>p {
+			margin: -1em 0 0 0;
+			width: 18em;
+			text-align: center;
+		}
+	}
+</style>
+
+<style>
+	.aLr {
+		width: 100vw;
+		height: 100vh;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		align-items: center;
+		justify-content: flex-end;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		overflow: hidden;
+		user-select: none;
+		pointer-events: none;
+	}
+
+	.hdm {
+		width: 100vw;
+		height: 100vh;
+		margin: 0;
+		padding: 0;
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+	}
+
+	.hdm.un {
+		z-index: 3;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hdm.un>h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 10em;
+		font-family: 'Teko';
+		font-weight: 600;
+	}
+
+	.hdm.un>p {
+		margin: -3em 0 0 0;
+		width: 45.5em;
+		text-align: center;
+	}
+
+	.hdm.yq {
+		display: grid;
+		align-items: center;
+		justify-content: flex-end;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		overflow: hidden;
+		z-index: 0;
+	}
+</style>
+
+<style>
+	.jfr {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+	}
+
+	.jfr.mvE {
+		z-index: 3;
+	}
+
+	.jfr.mvI {
+		z-index: 0;
+		background: url(/1c807f86.jpg?) center/cover;
+	}
+
+	.jfr>.fU3 {
+		transform: translateY(60vh);
+		width: 70vw;
+		min-height: 100vh;
+		margin: 0;
+		filter: blur(15em);
+		border-radius: 50%;
+		background: linear-gradient(45deg,rgb(var(--act1)),rgb(var(--act2)));
+	}
+
+	.jfr>.fJLV {
+		width: 100vw;
+		height: 75vh;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	
+	.fJLV>img {
+		width: 100%;
+		height: auto;
+		max-height: 90vh;
+		min-height: 40em;
+		object-fit: contain;
+		transform: translateY(5em);
+		aspect-ratio: var(--g4)/ var(--tj);
+		opacity: 0;
+		transition: opacity .5s;
+	}
+</style>
+
+<!-- Estilos de segunda secciòn -->
+
+<style>
+	@media screen and (max-width: 700px) {
+        .p6Dw>.dii>p {
+            /* width: ; */
+        }
+	}
+</style>
+
+<style>
+	.zzn {
+		background: url("/e4b48a94-35e0-45c8.jpg") center/cover;
+	}
+
+    .p6Dw {
+        width: 100vw;
+        height: fit-content;
+        margin: 0 0 0 0em;
+        padding: 4em 0px 2em 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+		background: linear-gradient(45deg, rgb(var(--cb) / 70%), rgb(var(--cb) / 50%));
+		backdrop-filter: blur(3px);
+    }
+
+    .p6Dw>.dii {
+        width: 75vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    
+    .p6Dw>.dii>h2 {
+        margin: 0;
+        font-family: 'Rubik';
+        letter-spacing: .15px;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    .p6Dw>.dii>h3 {
+        margin: -10px 0 0 0;
+        font-family: 'Playfair Display';
+        font-size: 3em;
+        font-weight: 500;
+    }
+    
+    .p6Dw>.dii>p {
+        width: 41em;
+        max-width: calc(100vw - 5em);
+    }
+</style>
