@@ -1,11 +1,13 @@
 ---
 interface Props {
-    src: string
+    Image: {
+        height: number;
+        src: string;
+        width: number;
+    }
 }
 
-const { src } = Astro.props;
-
-const { default: Image } = await import(`../../public/${src}`);
+const { Image } = Astro.props;
 
 ---
 
