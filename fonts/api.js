@@ -142,10 +142,8 @@ export default (()=>{
                     });
                     Local.Uuids[u] = outfilecss;
                     Local.Cache[ThisShaForFonts] = u;
-                    ending = true;
                 };
     
-                var ending = false;
                 var outfilecss = ``;
                 if (Array.isArray(fonts)) {
                     thread(1, fonts, (index, next) => {
